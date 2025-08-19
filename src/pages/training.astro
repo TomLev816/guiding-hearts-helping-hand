@@ -1,0 +1,171 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import Container from "@/components/container.astro";
+import Sectionhead from "@/components/sectionhead.astro";
+
+// src/pages/training.astro
+// A full page dedicated to Consulting and Training services.
+
+import Footer from "../components/Footer.astro";
+---
+
+<Layout title="Specializations">
+  <Container>
+
+
+
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulting and Training</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+      /* Global font styles */
+      .font-serif { font-family: 'Playfair Display', serif; }
+      .font-sans { font-family: 'Lato', sans-serif; }
+    </style>
+</head>
+<body class="font-sans bg-white">
+
+    <!-- Page Header -->
+    <header class="bg-[#fbfaf8] py-20 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-4xl mx-auto text-center">
+            <h1 class="font-serif text-4xl md:text-5xl lg:text-6xl text-[#393836] font-bold leading-tight">
+                Consulting & Training
+            </h1>
+            <p class="mt-6 max-w-3xl mx-auto text-lg text-[#575654] leading-relaxed">
+                (TOMS WORDS Empowering professionals and the community with the confidence and skills to navigate complex life and health decisions.)
+            </p>
+        </div>
+    </header>
+
+    <!-- Full-width Image Break -->
+    <div class="py-10 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <img 
+                src="https://placehold.co/1200x600/e3efee/332e76?text=Professional+Workshop+Setting" 
+                alt="A professional and engaging workshop environment." 
+                class="rounded-2xl shadow-xl object-cover w-full h-full"
+                onerror="this.onerror=null;this.src='https://placehold.co/1200x600/cccccc/ffffff?text=Image+Not+Found';"
+            >
+        </div>
+    </div>
+
+    <!-- Section 1: Professional Services -->
+    <main class="py-20 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-3xl mx-auto">
+            <h2 class="font-serif text-3xl md:text-4xl text-[#393836] text-center mb-12">
+                For Professionals & Organizations
+            </h2>
+
+            <!-- Subsection: Training & Workshops -->
+            <div class="mb-12">
+                <h3 class="font-serif text-2xl md:text-3xl text-[#332e76] mb-4">Training and Workshops</h3>
+                <p class="text-[#575654] leading-relaxed mb-6">
+                    Empower your Organization/teams with training designed just for them. We create customized workshops and presentations that align with your team's unique goals, professional roles, and expertise. Whether you need a 1-hour presentation, a 2-hour interactive workshop, or a comprehensive multi-year series, we can build a program that delivers results.
+                </p>
+            </div>
+
+            <!-- Subsection: Consulting -->
+            <div class="mb-12">
+                <h3 class="font-serif text-2xl md:text-3xl text-[#332e76] mb-4">Consulting</h3>
+                <p class="text-[#575654] leading-relaxed mb-6">
+                    We work with professionals to help them feel more confident and skilled when supporting clients and families facing serious illness, caregiving, and loss. Through case consultation and clinical supervision, we help them navigate tough conversations around goals of care and advance care planning, ensuring their clients receive the compassionate support they deserve.Our goal is to help professionals feel more prepared, comfortable and compassionate in their work.
+                </p>
+            </div>
+            
+            <!-- Benefits List -->
+            <div class="bg-[#fbfaf8] rounded-2xl p-8">
+                <h4 class="font-serif text-xl text-center text-[#393836] mb-6">Our Services Can Help Your Organization:</h4>
+                <ul class="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-4 text-[#575654]">
+                    <li class="flex items-start">
+                        <svg class="flex-shrink-0 h-6 w-6 text-[#332e76] mr-3 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+                        <span>Improve patient and family satisfaction</span>
+                    </li>
+                    <li class="flex items-start">
+                        <svg class="flex-shrink-0 h-6 w-6 text-[#332e76] mr-3 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+                        <span>Enhance staff retention and morale</span>
+                    </li>
+                    <li class="flex items-start">
+                        <svg class="flex-shrink-0 h-6 w-6 text-[#332e76] mr-3 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+                        <span>Optimize care delivery and efficiency</span>
+                    </li>
+                    <li class="flex items-start">
+                        <svg class="flex-shrink-0 h-6 w-6 text-[#332e76] mr-3 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+                        <span>Meet evolving regulatory standards</span>
+                    </li>
+                    <li class="flex items-start col-span-1 sm:col-span-2 sm:justify-center">
+                        <svg class="flex-shrink-0 h-6 w-6 text-[#332e76] mr-3 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+                        <span>Cultivate a more resilient and compassionate workforce</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <!-- Full-width Image Break -->
+    <div class="py-10 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <img 
+                src="https://placehold.co/1200x600/e3efee/332e76?text=Community+Setting" 
+                alt="A professional and engaging workshop environment." 
+                class="rounded-2xl shadow-xl object-cover w-full h-full"
+                onerror="this.onerror=null;this.src='https://placehold.co/1200x600/cccccc/ffffff?text=Image+Not+Found';"
+            >
+        </div>
+    </div>
+
+    <!-- Section 2: Community Presentations -->
+    <section class="py-20 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-3xl mx-auto">
+            <h2 class="font-serif text-3xl md:text-4xl text-[#393836] text-center mb-6">
+                For the Community
+            </h2>
+            <p class="text-center text-lg text-[#575654] leading-relaxed mb-12">
+                We provide engaging workshops and presentations for the general public to foster understanding and preparedness around important life and health decisions. Navigating decisions about health and caregiving can be overwhelming. We're here to help by providing clear, practical education for the community and the general public. All programs are designed to be supportive, interactive, and informative.
+            </p>
+
+
+            <h3 class="font-serif text-2xl md:text-3xl text-[#332e76] text-center mb-4">
+                Our Core Topics
+            </h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-8">
+                <div>
+                    <h4 class="font-serif text-xl text-[#332e76] mb-3">Hospice & Palliative Care</h4>
+                    <p class="text-[#575654]">Clarifying the differences and the unique support each provides.</p>
+                </div>
+                <div>
+                    <h4 class="font-serif text-xl text-[#332e76] mb-3">Goals of Care</h4>
+                    <p class="text-[#575654]">Helping you think through and discuss your healthcare wishes.</p>
+                </div>
+                <div>
+                    <h4 class="font-serif text-xl text-[#332e76] mb-3">Advance Care Planning</h4>
+                    <p class="text-[#575654]">Guiding you through the process of making your choices known and honoring your wishes.</p>
+                </div>
+                <div>
+                    <h4 class="font-serif text-xl text-[#332e76] mb-3">Caregiving</h4>
+                    <p class="text-[#575654]">Offering practical advice and support for those caring for others.</p>
+                </div>
+                <div>
+                    <h4 class="font-serif text-xl text-[#332e76] mb-3">Living with Serious Illness</h4>
+                    <p class="text-[#575654]">Providing resources and information for patients and families.</p>
+                </div>
+                <div>
+                    <h4 class="font-serif text-xl text-[#332e76] mb-3">Benefits & Entitlements</h4>
+                    <p class="text-[#575654]">Helping you navigate and access available support systems.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
+  </Container>
+</Layout>

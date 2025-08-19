@@ -1,0 +1,84 @@
+---
+// @ts-ignore
+import { Icon } from "astro-icon/components";
+import LazyImage from "./shared/LazyImage.astro";
+import heroImage from "@/assets/hero.png";
+
+// The data for the services. Adding an 'icon' property for an SVG path.
+const services = [
+  {
+    title: "Counseling",
+    description: "At Guiding Hearts Helping Hands, we understand that confronting serious illness, supporting a loved one through their health journey, experiencing loss, or navigating end-of-life decisions can be profoundly difficult and isolating. Our practice is dedicated to providing compassionate, specialized therapeutic support for individuals and families facing these unique and often overwhelming challenges.",
+    icon: `<path stroke-linecap="round" stroke-linejoin="round" d="M12 20.25c4.97 0 9-3.694 9-8.25s-4.03-8.25-9-8.25S3 7.444 3 12c0 2.104.859 4.023 2.273 5.48.432.447.74 1.04.586 1.641a4.483 4.483 0 01-.923 1.785A5.969 5.969 0 006 21c1.282 0 2.47-.402 3.445-1.087.81.22 1.668.337 2.555.337z" />`,
+    href: '/counseling',
+  },
+  {
+    title: "Consulting & Training",
+    description: "Engaging workshops and presentations for the general public to foster understanding and preparedness around important life and health decisions.",
+    icon: `<path stroke-linecap="round" stroke-linejoin="round" d="M3.75 3v11.25A2.25 2.25 0 006 16.5h12A2.25 2.25 0 0020.25 14.25V3.75M3.75 3h16.5M3.75 3v1.5m16.5-1.5v1.5m-16.5 5.25h16.5" />`,
+    href: '/training',
+
+  },
+  {
+    title: "Concierge Care Management",
+    description: "A comprehensive, personalized care management service which meets the unique needs of families across Long Island.  If you are caring for a family member, and juggling the responsibilities of work and family, then we can help.Our premier concierge care management services blend advocacy and service coordination with speed, compassion and personalization.",
+    icon: `<path stroke-linecap="round" stroke-linejoin="round" d="M9 12h3.75M9 15h3.75M9 18h3.75m3 .75H18a2.25 2.25 0 002.25-2.25V6.108c0-1.135-.845-2.098-1.976-2.192a48.424 48.424 0 00-1.123-.08m-5.801 0c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 00.75-.75 2.25 2.25 0 00-.1-.664m-5.8 0A2.251 2.251 0 0113.5 2.25H15c1.012 0 1.867.668 2.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m0 0H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V9.375c0-.621-.504-1.125-1.125-1.125H8.25zM6.75 12h.008v.008H6.75V12zm0 3h.008v.008H6.75V15zm0 3h.008v.008H6.75V18z" />`,
+    href: '/concierge-care',
+  },
+];
+---
+
+<section class="font-sans bg-[#fbfaf8] py-20 px-4 sm:px-6 lg:px-8">
+  <div class="max-w-7xl mx-auto">
+
+    <!-- Section Header -->
+    <div class="text-center mb-16">
+      <h2 class="font-serif text-4xl md:text-5xl text-[#393836]">
+        Our Services
+      </h2>
+      <p class="max-w-2xl mx-auto text-lg text-[#575654] leading-relaxed mt-4">
+        We offer dedicated support tailored to your unique circumstances.
+      </p>
+    </div>
+
+    <!-- Services Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+      {
+        services.map((service) => (
+          <div class="bg-white rounded-2xl shadow-lg p-8 flex flex-col text-center items-center transform hover:-translate-y-2 transition-transform duration-300">
+            
+            <!-- Icon -->
+            <div class="flex-shrink-0 mb-6">
+              <div class="w-16 h-16 bg-[#e3efee] rounded-full flex items-center justify-center">
+                <svg
+                  class="w-8 h-8 text-[#332e76]"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  set:html={service.icon}
+                />
+              </div>
+            </div>
+
+            <!-- Title -->
+            <h3 class="font-serif text-2xl text-[#393836] mb-4">
+              {service.title}
+            </h3>
+            
+            <!-- Description -->
+            <p class="text-[#575654] leading-relaxed flex-grow mb-8">
+              {service.description}
+            </p>
+            
+            <!-- Button -->
+            <a href={service.href} class="mt-auto inline-block bg-[#332e76] text-white font-bold text-base px-6 py-3 rounded-lg hover:bg-[#544cb9] transition-colors duration-300 shadow-md">
+              Learn More
+            </a>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</section>

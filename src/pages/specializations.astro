@@ -1,0 +1,150 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import Container from "@/components/container.astro";
+import Sectionhead from "@/components/sectionhead.astro";
+
+// src/pages/specializations.astro
+// This is a full page dedicated to detailing the areas of specialization.
+
+// Import the reusable footer component we created earlier.
+import Footer from "../components/Footer.astro";
+---
+
+<Layout title="Specializations">
+  <Container>
+
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Areas of Specialization</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+      /* Global font styles */
+      .font-serif { font-family: 'Playfair Display', serif; }
+      .font-sans { font-family: 'Lato', sans-serif; }
+      /* A helper class for a subtle text highlight */
+      .highlight { color: #332e76; }
+    </style>
+</head>
+<body class="font-sans bg-white">
+
+    <!-- Page Header -->
+    <header class="bg-[#fbfaf8] py-20 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-4xl mx-auto text-center">
+            <h1 class="font-serif text-4xl md:text-5xl lg:text-6xl text-[#393836] font-bold leading-tight">
+                Our Areas of Specialization
+            </h1>
+            <p class="mt-6 max-w-3xl mx-auto text-lg text-[#575654] leading-relaxed">
+                (TOMS WORDING) We provide dedicated, expert support across the most challenging chapters of life. Our care is tailored to your unique journey, ensuring you feel seen, heard, and understood.
+            </p>
+        </div>
+    </header>
+
+    <!-- Main Content Section -->
+    <main class="py-20 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-3xl mx-auto space-y-16">
+
+          <!-- Example for one section -->
+
+
+
+            <!-- Specialization 1: Palliative Care -->
+            <article>
+                <h2 class="font-serif text-3xl md:text-4xl text-[#393836] mb-4">Palliative Care & Advanced Illness</h2>
+                <p class="text-lg text-[#575654] leading-relaxed mb-6">
+                    Living with a serious or chronic condition can be overwhelming—for both patients and those who love and care for them. We bring deep expertise in supporting individuals and families navigating cancer, heart failure, COPD, neurological illnesses, and other complex diagnoses.
+                </p>
+                <p class="text-[#575654] leading-relaxed mb-6">
+                    Together, we’ll help you, your caregivers and care partners explore your values, clarify your goals, and make decisions that feel right for you. We offer calm, informed guidance every step of the way.
+                </p>
+                <ul class="list-none space-y-4 text-[#575654]">
+                    <li class="flex items-start">
+                        <svg class="flex-shrink-0 h-6 w-6 text-[#332e76] mr-3 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+                        <span><strong>Coping & Emotional Support:</strong> We help you process difficult emotions, manage chronic symptoms, and find ways to live meaningfully amidst uncertainty.</span>
+                    </li>
+                    <li class="flex items-start">
+                        <svg class="flex-shrink-0 h-6 w-6 text-[#332e76] mr-3 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+                        <span><strong>Advocacy & Dignity:</strong> We fiercely advocate for your needs, ensuring your voice remains at the center of your care to maintain control and dignity.</span>
+                    </li>
+                </ul>
+            </article>
+
+
+            <!-- Specialization 2: End-of-Life -->
+            <article>
+                <h2 class="font-serif text-3xl md:text-4xl text-[#393836] mb-4">End-of-Life Care</h2>
+                <p class="text-lg text-[#575654] leading-relaxed mb-6">
+                    Navigating the end of life—your own or that of someone you love—is among the most vulnerable experiences we encounter.Approaching the end of life, whether for oneself or a loved one, brings a unique set of emotional, spiritual, and practical considerations. We walk alongside individuals and families during this sacred time with compassion, honesty, and a steady presence.
+                </p>
+                <p class="text-[#575654] leading-relaxed mb-6">
+                     We help facilitate meaningful conversations, support important decisions, and create room for connection, reflection, and peace. Whether you're preparing, processing, or saying goodbye, we offer guidance rooted in <strong class="highlight">dignity, clarity, and love.</strong>
+                </p>
+                <p class="font-serif text-xl italic text-center text-[#575654] my-8">You don’t have to face this alone.</p>
+            </article>
+        </div>
+    </main>
+
+    <!-- Full-width Image Break -->
+    <div class="py-10 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <img 
+                src="https://placehold.co/1200x600/e3efee/332e76?text=A+Calm+and+Supportive+Image" 
+                alt="A serene image representing peace and support." 
+                class="rounded-2xl shadow-xl object-cover w-full h-full"
+                onerror="this.onerror=null;this.src='https://placehold.co/1200x600/cccccc/ffffff?text=Image+Not+Found';"
+            >
+        </div>
+    </div>
+
+    <!-- Continue Main Content -->
+    <section class="py-20 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-3xl mx-auto space-y-16">
+
+            <!-- Specialization 3: Caregiver Support -->
+            <article>
+                <h2 class="font-serif text-3xl md:text-4xl text-[#393836] mb-4">Caregiver Support</h2>
+                <p class="text-lg text-[#575654] leading-relaxed mb-6">
+                    Caring for someone you love is a profound act—but it can also bring deep exhaustion, guilt, and emotional strain. We offer dedicated support to family members and friends who are caring for someone with serious or advanced illnesses. We provide a space where caregivers can pause, breathe, and be cared for themselves.
+                </p>
+                <p class="text-[#575654] leading-relaxed mb-6">
+                    Together, we’ll tend to your emotional well-being, explore coping strategies, and help you reconnect with your own needs and identity—without guilt or judgment.
+                </p>
+                <p class="font-serif text-xl italic text-center text-[#575654] my-8">You give so much to others. You deserve care, too.</p>
+            </article>
+
+            <!-- Specialization 4: Aging & Life Transitions -->
+            <article>
+                <h2 class="font-serif text-3xl md:text-4xl text-[#393836] mb-4">Aging & Life Transitions</h2>
+                <p class="text-lg text-[#575654] leading-relaxed mb-6">
+                    Aging brings change—physically, emotionally, socially, and spiritually. Whether you’re navigating retirement, health changes, loss of independence, or a shifting identity, we’re here to help you reflect, adjust, and find meaning in this new stage of life.
+                </p>
+                <p class="text-[#575654] leading-relaxed mb-6">
+                    We support older adults—and those who love them—through the emotional and practical realities of growing older, offering tools for <strong class="highlight">resilience, connection, and purpose.</strong>
+                </p>
+            </article>
+
+            <!-- Specialization 5: Grief & Bereavement -->
+            <article>
+                <h2 class="font-serif text-3xl md:text-4xl text-[#393836] mb-4">Grief & Bereavement</h2>
+                <p class="text-lg text-[#575654] leading-relaxed mb-6">
+                    Losing a loved one is one of life's most painful experiences. Grief is not something to "get over"—it is something to be carried, honored, and gently tended to. Whether your loss is recent or long ago, expected or sudden, we offer compassionate, non-judgmental support to help you navigate the complex emotions of grief. We are here to support you through the pain, confusion, and tenderness that can arise.
+                </p>
+                <p class="text-[#575654] leading-relaxed mb-6">
+                    Our approach is gentle and affirming, creating space for sorrow, memory, and healing—at your own pace, in your own way. Grief has no timeline.
+                </p>
+                <p class="font-serif text-xl italic text-center text-[#575654] my-8">You are not broken. You are grieving—and that deserves care.</p>
+            </article>
+
+        </div>
+    </section>
+</body>
+</html>
+  </Container>
+</Layout>

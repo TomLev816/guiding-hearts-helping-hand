@@ -1,0 +1,142 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import Container from "@/components/container.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<Layout title="Counseling Sessions & Fees">
+  <Container>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Counseling</title>
+
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Lato:wght@400;700&display=swap"
+          rel="stylesheet"
+        />
+
+        <style>
+          /* Global font styles */
+          .font-serif {
+            font-family: "Playfair Display", serif;
+          }
+          .font-sans {
+            font-family: "Lato", sans-serif;
+          }
+          /* A helper class for a subtle text highlight */
+          .highlight {
+            color: #332e76;
+          }
+        </style>
+      </head>
+      <body class="font-sans bg-white">
+        <!-- Page Header -->
+        <header class="bg-[#fbfaf8] py-20 px-4 sm:px-6 lg:px-8">
+          <div class="max-w-4xl mx-auto text-center">
+            <h1
+              class="font-serif text-4xl md:text-5xl lg:text-6xl text-[#393836] font-bold leading-tight"
+            >
+              Counseling
+            </h1>
+            <p
+              class="mt-6 max-w-3xl mx-auto text-lg text-[#575654] leading-relaxed"
+            >
+              Our practice offers compassionate, specialized therapy for individuals and families navigating the profound challenges of serious illness, caregiving, grief, and end-of-life decisions.Our purpose is to ensure you feel seen, heard, and supported every step of the way. 
+            </p>
+
+          </div>
+        </header>
+
+        <!-- Main Content Section -->
+        <main class="py-20 px-4 sm:px-6 lg:px-8">
+          <div class="max-w-3xl mx-auto space-y-12">
+            <!-- Insurance Section -->
+            <article>
+              <h2
+                class="font-serif text-3xl md:text-4xl text-[#393836] mb-6"
+              >
+                Insurances Accepted
+              </h2>
+              <p class="text-lg text-[#575654] leading-relaxed mb-6">
+                We are in-network with a variety of insurance providers to make
+                care more accessible.
+              </p>
+              <div
+                class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 text-[#575654]"
+              >
+                <div class="bg-gray-50 p-4 rounded-lg">Aetna</div>
+                <div class="bg-gray-50 p-4 rounded-lg">
+                  Anthem Blue Cross and Blue Shield (Formerly Empire)
+                </div>
+                <div class="bg-gray-50 p-4 rounded-lg">
+                  Blue Cross Blue Shield of Massachusetts
+                </div>
+                <div class="bg-gray-50 p-4 rounded-lg">
+                  Carelon Behavioral Health
+                </div>
+                <div class="bg-gray-50 p-4 rounded-lg">Cigna</div>
+                <div class="bg-gray-50 p-4 rounded-lg">
+                  Horizon Blue Cross and Blue Shield of New Jersey
+                </div>
+                <div class="bg-gray-50 p-4 rounded-lg">Medicare (Original)</div>
+                <div class="bg-gray-50 p-4 rounded-lg">Medicare Advantage Plans</div>
+                <div class="bg-gray-50 p-4 rounded-lg">Oscar (Optum)</div>
+                <div class="bg-gray-50 p-4 rounded-lg">Oxford (Optum)</div>
+                <div class="bg-gray-50 p-4 rounded-lg">
+                  Quest Behavioral Health
+                </div>
+                <div class="bg-gray-50 p-4 rounded-lg">
+                  United Healthcare (Optum)
+                </div>
+                <div class="bg-gray-50 p-4 rounded-lg">
+                  United Healthcare Medicare Advantage
+                </div>
+              </div>
+              <p class="mt-6 text-[#575654]">
+                <strong class="highlight">Coming soon:</strong> Optum Medicaid
+                NY
+              </p>
+              <p class="mt-4 text-[#575654]">
+                If you have any questions about insurance coverage, please
+                contact us.
+              </p>
+            </article>
+
+            <!-- Private Pay Section -->
+            <article>
+              <h2
+                class="font-serif text-3xl md:text-4xl text-[#393836] mb-4"
+              >
+                Private Pay Options
+              </h2>
+              <p class="text-lg text-[#575654] leading-relaxed">
+                Private pay options are available. Please contact us to further
+                discuss rates and arrangements that work for you.
+              </p>
+            </article>
+
+<section class="font-sans bg-[#e3efee] py-20 px-4 sm:px-6 lg:px-8 mb-20">
+  <div class="max-w-4xl mx-auto text-center">
+    <h2 class="font-serif text-4xl md:text-5xl text-[#393836] mb-4">
+      Ready to Take the Next Step?
+    </h2>
+    <p class="max-w-2xl mx-auto text-lg text-[#575654] leading-relaxed mb-10">
+       Reach out to schedule a complimentary 15 minute consultation.
+    </p>
+    <a href="/contact" class="inline-block bg-[#332e76] text-white font-bold text-lg px-8 py-4 rounded-lg hover:bg-[#544cb9] transition-colors duration-300 shadow-md">
+      Get in Touch
+    </a>
+  </div>
+</section>
+
+          </div>
+        </main>
+      </body>
+    </html>
+  </Container>
+</Layout>

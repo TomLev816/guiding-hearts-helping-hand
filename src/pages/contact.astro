@@ -8,37 +8,97 @@ import { Icon } from "astro-icon/components";
 
 <Layout title="Contact">
   <Container>
-    <Sectionhead>
-      <Fragment slot="title">Contact</Fragment>
-      <Fragment slot="desc">We are a here to help.</Fragment>
-    </Sectionhead>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Contact Us</title>
 
-    <div class="grid md:grid-cols-2 gap-10 mx-auto max-w-4xl mt-16">
-      <div>
-        <h2 class="font-medium text-2xl text-gray-800">Contact Astroship</h2>
-        <p class="text-lg leading-relaxed text-slate-500 mt-3">
-          Have something to say? We are here to help. Fill up the form or send
-          email or call phone.
-        </p>
-        <div class="mt-5">
-          <div class="flex items-center mt-2 space-x-2 text-gray-600">
-            <Icon class="text-gray-400 w-4 h-4" name="uil:map-marker" />
-            <span>1734 Sanfransico, CA 93063</span>
-          </div><div class="flex items-center mt-2 space-x-2 text-gray-600">
-            <Icon class="text-gray-400 w-4 h-4" name="uil:envelope" /><a
-              href="mailto:hello@astroshipstarter.com"
-              >hello@astroshipstarter.com</a
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Lato:wght@400;700&display=swap"
+          rel="stylesheet"
+        />
+
+        <style>
+          /* Global font styles */
+          .font-serif {
+            font-family: "Playfair Display", serif;
+          }
+          .font-sans {
+            font-family: "Lato", sans-serif;
+          }
+           /* Form validation styles */
+          .invalid-feedback,
+          .empty-feedback {
+            display: none;
+          }
+
+          .was-validated :placeholder-shown:invalid ~ .empty-feedback {
+            display: block;
+          }
+
+          .was-validated :not(:placeholder-shown):invalid ~ .invalid-feedback {
+            display: block;
+          }
+
+          .is-invalid,
+          .was-validated :invalid {
+            border-color: #dc3545;
+          }
+        </style>
+      </head>
+      <body class="font-sans bg-white">
+        <!-- Page Header -->
+        <header class="bg-[#fbfaf8] py-20 px-4 sm:px-6 lg:px-8">
+          <div class="max-w-4xl mx-auto text-center">
+            <h1
+              class="font-serif text-4xl md:text-5xl lg:text-6xl text-[#393836] font-bold leading-tight"
             >
-          </div><div class="flex items-center mt-2 space-x-2 text-gray-600">
-            <Icon class="text-gray-400 w-4 h-4" name="uil:phone" /><a
-              href="tel:+1 (987) 4587 899">+1 (987) 4587 899</a
+              Get In Touch
+            </h1>
+            <p
+              class="mt-6 max-w-3xl mx-auto text-lg text-[#575654] leading-relaxed"
             >
+              We're here to help. Reach out to us directly or use the form below
+              to send a message. We look forward to hearing from you.
+            </p>
+          </div>
+        </header>
+
+        <div class="grid md:grid-cols-2 gap-10 mx-auto max-w-4xl mt-16">
+        <!-- Contact Info -->
+          <div class="space-y-10">
+            <div>
+              <h2 class="font-serif text-3xl text-[#393836] mb-3">
+                Lori Hardoon, LCSW
+              </h2>
+              <p class="text-lg text-[#575654]">
+                <strong>Telephone:</strong> 646-831-4811
+              </p>
+              <p class="text-lg text-[#575654]">
+                <strong>Email:</strong> LHardoon@guidingheartshelpinghands.com
+              </p>
+            </div>
+            <div>
+              <h2 class="font-serif text-3xl text-[#393836] mb-3">
+                Maria Lever, LCSW
+              </h2>
+              <p class="text-lg text-[#575654]">
+                <strong>Telephone:</strong> 631-572-1844
+              </p>
+              <p class="text-lg text-[#575654]">
+                <strong>Email:</strong> MLever@guidingheartshelpinghands.com
+              </p>
+            </div>
+          </div>
+          <div>
+            <Contactform />
           </div>
         </div>
-      </div>
-      <div>
-        <Contactform />
-      </div>
-    </div>
+      </body>
+    </html>
   </Container>
 </Layout>
