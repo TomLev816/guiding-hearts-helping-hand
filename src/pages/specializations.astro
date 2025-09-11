@@ -2,12 +2,15 @@
 import Layout from "@/layouts/Layout.astro";
 import Container from "@/components/container.astro";
 import Sectionhead from "@/components/sectionhead.astro";
+import { Picture } from "astro:assets";
 
 // src/pages/specializations.astro
 // This is a full page dedicated to detailing the areas of specialization.
 
 // Import the reusable footer component we created earlier.
 import Footer from "../components/Footer.astro";
+import seasImage from "@/assets/seas.jpg";
+
 ---
 
 <Layout title="Specializations">
@@ -36,7 +39,7 @@ import Footer from "../components/Footer.astro";
 <body class="font-sans bg-white">
 
     <!-- Page Header -->
-    <header class="bg-[#c2c0d6] py-20 px-4 sm:px-6 lg:px-8">
+    <header class="bg-[#e3efee] py-20 px-4 sm:px-6 lg:px-8">
         <div class="max-w-4xl mx-auto text-center">
             <h1 class="font-serif text-4xl md:text-5xl lg:text-6xl text-[#393836] font-bold leading-tight">
                 Our Areas of Specialization
@@ -62,12 +65,24 @@ import Footer from "../components/Footer.astro";
                 </p>
                 <ul class="list-none space-y-4 text-[#575654]">
                     <li class="flex items-start">
-                        <svg class="flex-shrink-0 h-6 w-6 text-[#332e76] mr-3 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
-                        <span><strong>Coping & Emotional Support:</strong> We help you process difficult emotions, manage chronic symptoms, and find ways to live meaningfully amidst uncertainty.</span>
+                        <svg class="flex-shrink-0 h-6 w-6 text-[#332e76] mr-3 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
+                        </svg>
+                        <span><strong >Emotional Support:</strong> We help you process difficult emotions, explore your values and goals and find ways to live meaningfully amidst uncertainty.</span>
                     </li>
+
                     <li class="flex items-start">
-                        <svg class="flex-shrink-0 h-6 w-6 text-[#332e76] mr-3 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
-                        <span><strong>Advocacy & Dignity:</strong> We fiercely advocate for your needs, ensuring your voice remains at the center of your care to maintain control and dignity.</span>
+                        <svg class="flex-shrink-0 h-6 w-6 text-[#332e76] mr-3 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
+                        </svg>
+                        <span><strong >Coping:</strong> Help you cope with your diagnosis and help you manage your symptoms and provide calm, informed guidance every step of the way to address changes in identity and daily life.</span>
+                    </li>
+                        
+                    <li class="flex items-start">
+                        <svg class="flex-shrink-0 h-6 w-6 text-[#332e76] mr-3 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
+                        </svg>
+                        <span><strong>Advocacy & Dignity:</strong> We fiercely advocate for your needs, ensuring your voice remains at the center of your care to maintain control, dignity and what matters most.</span>
                     </li>
                 </ul>
             </article>
@@ -91,13 +106,14 @@ import Footer from "../components/Footer.astro";
 
     <!-- Full-width Image Break -->
     <div class="py-10 bg-white">
-        <div class="max-w-7xl mx-auto">
-            <img 
-                src="https://placehold.co/1200x600/e3efee/332e76?text=A+Calm+and+Supportive+Image" 
-                alt="A serene image representing peace and support." 
-                class="rounded-2xl shadow-xl object-cover w-full h-full"
-                onerror="this.onerror=null;this.src='https://placehold.co/1200x600/cccccc/ffffff?text=Image+Not+Found';"
-            >
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <Picture
+              class="rounded-2xl shadow-xl object-cover w-full h-full"
+              src={seasImage}
+              alt="First descriptive image alt text"
+              sizes="(max-width: 768px) 100vw, 50vw"
+              loading="eager"
+            />
         </div>
     </div>
 

@@ -11,8 +11,8 @@ import Footer from "../components/Footer.astro";
 
 // Images
 import loriImage1 from "@/assets/lori-presenter.png";
-import loriImage2 from "@/assets/lori-presenter-copy.png";
-import trainingImage from "@/assets/training.png";
+import trainingImage from "@/assets/zoom-meeting.jpg";
+import communityImage from "@/assets/community_out.jpg";
 
 ---
 
@@ -42,7 +42,7 @@ import trainingImage from "@/assets/training.png";
 <body class="font-sans bg-white">
 
     <!-- Page Header -->
-    <header class="bg-[#fbfaf8] py-20 px-4 sm:px-6 lg:px-8">
+    <header class="bg-[#e3efee] py-20 px-4 sm:px-6 lg:px-8">
         <div class="max-w-4xl mx-auto text-center">
             <h1 class="font-serif text-4xl md:text-5xl lg:text-6xl text-[#393836] font-bold leading-tight">
                 Consulting & Training
@@ -97,7 +97,7 @@ import trainingImage from "@/assets/training.png";
             <div class="mb-12">
                 <h3 class="font-serif text-2xl md:text-3xl text-[#332e76] mb-4">Training and Workshops</h3>
                 <p class="text-[#575654] leading-relaxed mb-6">
-                    Empower your Organization/teams with training designed just for them. We create customized workshops and presentations that align with your team's unique goals, professional roles, and expertise. Whether you need a 2-hour presentation or a comprehensive multi-year series, we can build a program that delivers results.
+                    Empower your Organization/teams with training designed just for them. We create customized workshops and presentations that align with your team's unique goals, professional roles, and expertise. Whether you need a 2-hour presentation or a comprehensive multi-year series, we can build a program that delivers results in person or virtual.
                 </p>
             </div>
 
@@ -141,12 +141,13 @@ import trainingImage from "@/assets/training.png";
     <!-- Full-width Image Break -->
     <div class="py-10 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <img 
-                src="https://placehold.co/1200x600/e3efee/332e76?text=Community+Setting" 
-                alt="A professional and engaging workshop environment." 
-                class="rounded-2xl shadow-xl object-cover w-full h-full"
-                onerror="this.onerror=null;this.src='https://placehold.co/1200x600/cccccc/ffffff?text=Image+Not+Found';"
-            >
+            <Picture
+              class="rounded-2xl shadow-xl object-cover w-full h-full"
+              src={communityImage}
+              alt="First descriptive image alt text"
+              sizes="(max-width: 768px) 100vw, 50vw"
+              loading="eager"
+            />
         </div>
     </div>
 
