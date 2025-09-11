@@ -2,11 +2,18 @@
 import Layout from "@/layouts/Layout.astro";
 import Container from "@/components/container.astro";
 import Sectionhead from "@/components/sectionhead.astro";
+import { Picture } from "astro:assets";
 
 // src/pages/training.astro
 // A full page dedicated to Consulting and Training services.
 
 import Footer from "../components/Footer.astro";
+
+// Images
+import loriImage1 from "@/assets/lori-presenter.png";
+import loriImage2 from "@/assets/lori-presenter-copy.png";
+import trainingImage from "@/assets/training.png";
+
 ---
 
 <Layout title="Specializations">
@@ -41,21 +48,42 @@ import Footer from "../components/Footer.astro";
                 Consulting & Training
             </h1>
             <p class="mt-6 max-w-3xl mx-auto text-lg text-[#575654] leading-relaxed">
-                (TOMS WORDS Empowering professionals and the community with the confidence and skills to navigate complex life and health decisions.)
+                We offer informative and interactive workshops and presentations for professionals and the community to help everyone feel more prepared to navigate serious and advanced illness, caregiving, grief and life decisions.
             </p>
         </div>
     </header>
 
     <!-- Full-width Image Break -->
     <div class="py-10 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <img 
-                src="https://placehold.co/1200x600/e3efee/332e76?text=Professional+Workshop+Setting" 
-                alt="A professional and engaging workshop environment." 
-                class="rounded-2xl shadow-xl object-cover w-full h-full"
-                onerror="this.onerror=null;this.src='https://placehold.co/1200x600/cccccc/ffffff?text=Image+Not+Found';"
-            >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col md:flex-row gap-8">
+
+          <div class="md:w-1/2">
+            <Picture
+              class="rounded-xl shadow-lg w-full h-full object-cover"
+              src={loriImage1}
+              alt="First descriptive image alt text"
+              widths={[200, 400, 600]}
+              sizes="(max-width: 768px) 100vw, 50vw"
+              loading="eager"
+              format="avif"
+            />
+          </div>
+
+          <div class="md:w-1/2">
+            <Picture
+              class="rounded-xl shadow-lg w-full h-full object-cover"
+              src={trainingImage}
+              alt="Second descriptive image alt text"
+              widths={[200, 400, 600]}
+              sizes="(max-width: 768px) 100vw, 50vw"
+              loading="lazy"
+              format="avif"
+            />
+          </div>
+
         </div>
+      </div>
     </div>
 
     <!-- Section 1: Professional Services -->
@@ -69,7 +97,7 @@ import Footer from "../components/Footer.astro";
             <div class="mb-12">
                 <h3 class="font-serif text-2xl md:text-3xl text-[#332e76] mb-4">Training and Workshops</h3>
                 <p class="text-[#575654] leading-relaxed mb-6">
-                    Empower your Organization/teams with training designed just for them. We create customized workshops and presentations that align with your team's unique goals, professional roles, and expertise. Whether you need a 1-hour presentation, a 2-hour interactive workshop, or a comprehensive multi-year series, we can build a program that delivers results.
+                    Empower your Organization/teams with training designed just for them. We create customized workshops and presentations that align with your team's unique goals, professional roles, and expertise. Whether you need a 2-hour presentation or a comprehensive multi-year series, we can build a program that delivers results.
                 </p>
             </div>
 

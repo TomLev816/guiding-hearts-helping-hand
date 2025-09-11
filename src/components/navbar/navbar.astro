@@ -4,6 +4,7 @@ import Link from "@/components/ui/link.astro";
 import Dropdown from "./dropdown.astro";
 import { Astronav, MenuItems, MenuIcon } from "astro-navbar";
 import logoImage from "@/assets/GuidingHeartsLogo.png";
+import logoText from "@/assets/logoText.jpg";
 import heroImage from "@/assets/hero.png";
 import { Picture } from "astro:assets";
 
@@ -17,9 +18,9 @@ const menuitems = [
     path: "#",
     children: [
       { title: "Counseling", path: "/counseling" },
-      { title: "Concierge Care Management", path: "concierge-care" },
+      { title: "Concierge Care Management", path: "/concierge-care" },
       { title: "Consultation and Training", path: "/training" },
-      { title: "404 Page", path: "/404" },
+      { title: "Medicaid Assistance", path: "/medicaid-assistance" },
     ],
   },
   {
@@ -38,59 +39,54 @@ const menuitems = [
   <header class="flex flex-col lg:flex-row justify-between items-center my-5">
     <Astronav>
         <div class="flex w-full lg:w-auto items-center justify-between">
-        {/* Logo Section */}
+          {/* Logo Section */}
           <a href="/">
-          {/* Replace "/logo.svg" with the path to your logo file.
-            Make sure your logo is in the `public` directory.
-            Adjust the `h-10` (height) and `w-auto` (width) classes as needed.
-          */}
-          <Picture
-            src={logoImage}
-            class="h-40 w-auto"
-            alt="Astronaut in the air"
-          />
+            {Astro.url.pathname === '/' ? 
+              <Picture
+                src={logoText}
+                class="h-10 w-auto"
+                alt="Guiding Hearts Helping Hands"
+              />
+            :
+              <Picture
+                src={logoImage}
+                class="h-40 w-auto hidden lg:block"
+                alt="Guiding Hearts Helping Hands Logo"
+              />
+            }
           </a>
-        <div class="block lg:hidden">
-
-          <MenuIcon class="w-4 h-4 text-gray-800" />
+          <div class="block lg:hidden">
+            <MenuIcon class="w-10 h-10 text-gray-800" />
+          </div>
         </div>
-      </div>
-      <MenuItems class="hidden w-full lg:w-auto mt-2 lg:flex lg:mt-0">
-        <ul class="flex flex-col lg:flex-row lg:gap-3">
-          {
-            menuitems.map((item, index) => (
-              <>
-                {item.children && (
-                  <Dropdown
-                    title={item.title}
-                    children={item.children}
-                    lastItem={index === menuitems.length - 1}
-                  />
-                )}
+        <MenuItems class="hidden w-full lg:w-auto mt-2 lg:flex lg:mt-0">
+          <ul class="flex flex-col lg:flex-row lg:gap-3">
+            {
+              menuitems.map((item, index) => (
+                <>
+                  {item.children && (
+                    <Dropdown
+                      title={item.title}
+                      children={item.children}
+                      lastItem={index === menuitems.length - 1}
+                    />
+                  )}
 
-                {!item.children && (
-                  <li>
-                    <a
-                      href={item.path}
-                      class="flex lg:px-3 py-2 items-center text-gray-600 hover:text-gray-900">
-                      <span> {item.title}</span>
-                      {item.badge && (
-                        <span class="ml-1 px-2 py-0.5 text-[10px] animate-pulse font-semibold uppercase text-white bg-indigo-600 rounded-full">
-                          New
-                        </span>
-                      )}
-                    </a>
-                  </li>
-                )}
-              </>
-            ))
-          }
-        </ul>
-        <div class="lg:hidden flex items-center mt-3 gap-4">
-          <Link href="#" style="muted" block size="md">Log in</Link>
-          <Link href="#" size="md" block>Sign up</Link>
-        </div>
-      </MenuItems>
+                  {!item.children && (
+                    <li>
+                      <a
+                        href={item.path}
+                        class="flex lg:px-3 py-2 text-xl items-center text-gray-600 hover:text-gray-900">
+                        <span> {item.title}</span>
+                      </a>
+                    </li>
+                  )}
+                </>
+              ))
+            }
+          </ul>
+        </MenuItems> 
+
     </Astronav>
   </header>
 </Container>

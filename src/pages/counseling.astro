@@ -2,6 +2,7 @@
 import Layout from "@/layouts/Layout.astro";
 import Container from "@/components/container.astro";
 import Footer from "../components/Footer.astro";
+import Cta from "@/components/cta.astro";
 ---
 
 <Layout title="Counseling Sessions & Fees">
@@ -46,7 +47,8 @@ import Footer from "../components/Footer.astro";
             <p
               class="mt-6 max-w-3xl mx-auto text-lg text-[#575654] leading-relaxed"
             >
-              Our practice offers compassionate, specialized therapy for individuals and families navigating the profound challenges of serious illness, caregiving, grief, and end-of-life decisions.Our purpose is to ensure you feel seen, heard, and supported every step of the way. 
+              
+              At Guiding Hearts Helping Hands, we understand that confronting serious illness, supporting a loved one through their health journey, experiencing loss, or navigating end-of-life decisions can be profoundly difficult and isolating. Our practice is dedicated to providing compassionate, specialized therapeutic support for individuals and families facing these unique and often overwhelming challenges. 
             </p>
 
           </div>
@@ -120,19 +122,7 @@ import Footer from "../components/Footer.astro";
               </p>
             </article>
 
-<section class="font-sans bg-[#e3efee] py-20 px-4 sm:px-6 lg:px-8 mb-20">
-  <div class="max-w-4xl mx-auto text-center">
-    <h2 class="font-serif text-4xl md:text-5xl text-[#393836] mb-4">
-      Ready to Take the Next Step?
-    </h2>
-    <p class="max-w-2xl mx-auto text-lg text-[#575654] leading-relaxed mb-10">
-       Reach out to schedule a complimentary 15 minute consultation.
-    </p>
-    <a href="/contact" class="inline-block bg-[#332e76] text-white font-bold text-lg px-8 py-4 rounded-lg hover:bg-[#544cb9] transition-colors duration-300 shadow-md">
-      Get in Touch
-    </a>
-  </div>
-</section>
+          <Cta />
 
           </div>
         </main>

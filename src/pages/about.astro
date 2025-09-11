@@ -5,11 +5,6 @@ import Layout from "@/layouts/Layout.astro";
 import Container from "@/components/container.astro";
 import Sectionhead from "@/components/sectionhead.astro";
 
-// Filter team entries with 'draft: false' & date before current date
-const publishedTeamMembers = await getCollection("team", ({ data }) => {
-  console.log(data)
-  return !data.draft && data.publishDate < new Date();
-});
 ---
 
 <Layout title="About Us ">
@@ -60,32 +55,62 @@ const publishedTeamMembers = await getCollection("team", ({ data }) => {
             <div
               class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-10"
             >
-              {
-                publishedTeamMembers.map((teamMemberEntry) => (
-                  <div class="group text-center">
-                    <div class="w-48 h-48 mx-auto">
-                      <Picture
-                        src={teamMemberEntry.data.avatar.src}
-                        alt={teamMemberEntry.data.avatar.alt}
-                        sizes="(max-width: 640px) 100vw, 192px"
-                        width={192}
-                        height={192}
-                        class="w-full h-full rounded-full transition group-hover:shadow-xl object-cover object-center"
-                      />
-                    </div>
+              <div class="group text-center">
+                <div class="w-48 h-48 mx-auto">
+                  <Picture
+                    src="https://images.unsplash.com/photo-1580489944761-15a19d654956?&fit=crop&w=280"
+                    alt="Maria Lever LCSW"
+                    sizes="(max-width: 640px) 100vw, 192px"
+                    width={192}
+                    height={192}
+                    class="w-full h-full rounded-full transition group-hover:shadow-xl object-cover object-center"
+                  />
+                </div>
 
-                    <div class="mt-6">
-                      <h3 class="font-serif text-2xl text-[#393836]">
-                        {teamMemberEntry.data.name}
-                      </h3>
+                <div class="mt-6">
+                  <h3 class="font-serif text-2xl text-[#393836]">
+                    Maria Lever, LCSW
+                  </h3>
 
-                       <p class="mt-4 text-base text-[#575654] leading-relaxed text-left">
-                        {teamMemberEntry.data.about}
-                      </p>
-                    </div>
-                  </div>
-                ))
-              }
+                   <p class="mt-4 text-base text-[#575654] leading-relaxed text-left">
+                    Maria Lever is a Licensed Clinical Social Worker (LCSW) with a deep commitment to supporting individuals and families through some of life’s most challenging moments. With over 13 years of post-master's experience, she specializes in providing compassionate guidance through serious or advanced illness, end-of-life, caregiving, bereavement, and life transitions. Maria’s practice is founded on the principles of dignity, respect, and autonomy.  Her work is defined by a deep respect for client autonomy, providing care that is rooted in compassion and dignity.She works closely with clients and their caregivers, offering expert counseling that honors their unique needs and wishes
+                  </p>
+                  <p class="mt-4 text-base text-[#575654] leading-relaxed text-left">
+                    A recognized leader in her field, Maria is passionate about advancing the practice of social work. She has supervised master's level clinicians and interns, organized professional conferences, and presented on vital topics for the last ten years. She also co-authored the article, “Caregiver Mental Health: The Invisible Pandemic,” for SWAAY with Lori Hardoon. 
+                  </p>
+                  <p class="mt-4 text-base text-[#575654] leading-relaxed text-left">
+                  Maria earned her Master’s in Social Work with a clinical concentration from Hunter College after receiving her bachelor's from the University at Albany. She holds a SIFI certification from Adelphi University and is a graduate of the prestigious Zelda Foster Leadership Program in Palliative and End-of-Life Care at NYU’s Silver School of Social Work.
+                  </p>
+                </div>
+              </div>
+                                <div class="group text-center">
+                <div class="w-48 h-48 mx-auto">
+                  <Picture
+                    src="https://images.unsplash.com/photo-1580489944761-15a19d654956?&fit=crop&w=280"
+                    alt="Lori Hardoon LCSW"
+                    sizes="(max-width: 640px) 100vw, 192px"
+                    width={192}
+                    height={192}
+                    class="w-full h-full rounded-full transition group-hover:shadow-xl object-cover object-center"
+                  />
+                </div>
+
+                <div class="mt-6">
+                  <h3 class="font-serif text-2xl text-[#393836]">
+                    Lori Hardoon, LCSW
+                  </h3>
+
+                  <p class="mt-4 text-base text-[#575654] leading-relaxed text-left">
+                      For more than 30 years, Lori Hardoon has had the profound privilege of walking alongside individuals and families through some of life’s most tender and complex chapters—serious illness, caregiving, aging, grief, and everything in between. As a Licensed Clinical Social Worker, her work is anchored in compassion, dignity, and an unwavering respect for each person’s story.
+                  </p>
+                  <p class="mt-4 text-base text-[#575654] leading-relaxed text-left">
+                      Lori earned a Master of Social Work from Adelphi University and has extensive post graduate training in palliative and end-of-life care, advanced care planning, grief counseling, caregiver support, aging, trauma-informed care, and the role of spirituality in clinical practice. She also holds certificates in Palliative and End of Life Care and Spirituality and Social Work from NYU Silver School of Social Work. She has over 30 years’ experience in working with and running a variety of programs for people who are facing chronic, serious, life-limiting and advanced illness, those dealing with issues of aging, bereavement/ loss, disabilities and their loved ones and caregivers.  Lori Hardoon created, built and lead the Partners In Dignity program (also known as the Long Island Center for Dignity and Support), an initiative of UJA-Federation of New York serving individuals and families coping with chronic, serious, life limiting and advanced illness, disabilities, and life altering circumstances since 2003.  She supervised teams of master level social workers, nurses, nutritionists, spiritual care providers, physical & occupational therapists, and social work interns in the delivery of care/case management, counseling, caregiver support, bereavement counseling and advocacy.  She has provided professional trainings and community educational workshops on the multiple options for those coping with serious, advanced illnesses, advance care planning, palliative care, hospice, caregiving and grief and bereavement issues. She also has presented at local, regional and national conferences.  Lori Hardoon has written several articles and co-penned several other articles with Maria Lever, LCSW.
+                  </p>
+                  <p class="mt-4 text-base text-[#575654] leading-relaxed text-left">
+                      Lori’s approach is holistic and heart-centered—offering a safe, steady presence and a calm, supportive space to help you feel seen, heard, and empowered in whatever season you’re facing.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </main>

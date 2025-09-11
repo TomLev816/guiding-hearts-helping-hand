@@ -1,8 +1,5 @@
 ---
 import { Picture } from "astro:assets";
-import heroImage from "@/assets/hero.png";
-import Link from "@/components/ui/link.astro";
-import { Icon } from "astro-icon/components";
 import logoImage from "@/assets/GuidingHeartsLogo.png";
 
 ---
@@ -12,13 +9,14 @@ import logoImage from "@/assets/GuidingHeartsLogo.png";
   <div class="py-6 md:order-1 hidden md:block">
     <Picture
       src={logoImage}
-      alt="Astronaut in the air"
+      alt="Guiding Hearts Helping Hands Logo"
       widths={[200, 400, 600]}
       sizes="(max-width: 800px) 100vw, 620px"
       loading="eager"
       format="avif"
     />
   </div>
+  
   <div class="text-center md:text-left">
     <h1 class="font-serif text-4xl md:text-5xl lg:text-6xl text-[#393836] font-bold leading-tight mb-6">
       Compassionate Support for Life’s Most Difficult Times
@@ -29,8 +27,8 @@ import logoImage from "@/assets/GuidingHeartsLogo.png";
     <p class="text-lg text-[#575654] leading-relaxed mb-10">
         Let us help you find strength, meaning, and connection—no matter where you are on your journey.
     </p>
-    <a href="/contact" class="inline-block bg-[#332e76] text-white font-bold text-lg px-8 py-4 rounded-lg hover:bg-[#544cb9] transition-colors duration-300 shadow-md">
-      Schedule a Consultation
+    <a href="/contact" class="inline-block bg-[#013c87] text-white font-bold text-lg px-8 py-4 rounded-lg hover:bg-[#004ba9] transition-colors duration-300 shadow-md">
+      Schedule a Free Consultation
     </a>
   </div>
 
