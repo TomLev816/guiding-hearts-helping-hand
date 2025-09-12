@@ -12,7 +12,8 @@ import Footer from "../components/Footer.astro";
 // Images
 import loriImage1 from "@/assets/lori-presenter.png";
 import trainingImage from "@/assets/zoom-meeting.jpg";
-import communityImage from "@/assets/community_out.jpg";
+import communityImage1 from "@/assets/community_out.jpg";
+import communityImage2 from "@/assets/community_out_2.jpg";
 
 ---
 
@@ -95,7 +96,7 @@ import communityImage from "@/assets/community_out.jpg";
 
             <!-- Subsection: Training & Workshops -->
             <div class="mb-12">
-                <h3 class="font-serif text-2xl md:text-3xl text-[#332e76] mb-4">Training and Workshops</h3>
+                <h3 class="font-serif text-2xl md:text-3xl text-[#393836] mb-4">Training and Workshops</h3>
                 <p class="text-[#575654] leading-relaxed mb-6">
                     Empower your Organization/teams with training designed just for them. We create customized workshops and presentations that align with your team's unique goals, professional roles, and expertise. Whether you need a 2-hour presentation or a comprehensive multi-year series, we can build a program that delivers results in person or virtual.
                 </p>
@@ -103,7 +104,7 @@ import communityImage from "@/assets/community_out.jpg";
 
             <!-- Subsection: Consulting -->
             <div class="mb-12">
-                <h3 class="font-serif text-2xl md:text-3xl text-[#332e76] mb-4">Consulting</h3>
+                <h3 class="font-serif text-2xl md:text-3xl text-[#393836] mb-4">Consulting</h3>
                 <p class="text-[#575654] leading-relaxed mb-6">
                     We work with professionals to help them feel more confident and skilled when supporting clients and families facing serious illness, caregiving, and loss. Through case consultation and clinical supervision, we help them navigate tough conversations around goals of care and advance care planning, ensuring their clients receive the compassionate support they deserve.Our goal is to help professionals feel more prepared, comfortable and compassionate in their work.
                 </p>
@@ -138,57 +139,100 @@ import communityImage from "@/assets/community_out.jpg";
         </div>
     </main>
 
-    <!-- Full-width Image Break -->
-    <div class="py-10 bg-white">
+    <section class="pt-16 pb-8 md:pt-12 md:pb-12">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <Picture
-              class="rounded-2xl shadow-xl object-cover w-full h-full"
-              src={communityImage}
-              alt="First descriptive image alt text"
-              sizes="(max-width: 768px) 100vw, 50vw"
-              loading="eager"
-            />
+            <div class="grid lg:grid-cols-2 place-items-center gap-12">
+                <div class="text-center md:text-left">
+                    <h2 class="font-serif text-3xl md:text-4xl text-[#393836] text-center mb-6">
+                        For the Community
+                    </h2>
+                    <p class="text-center text-lg text-[#575654] leading-relaxed mb-12">
+                        We provide engaging workshops and presentations for the general public to foster understanding and preparedness around important life and health decisions. Navigating decisions about health and caregiving can be overwhelming. We're here to help by providing clear, practical education for the community and the general public. All programs are designed to be supportive, interactive, and informative.
+                    </p>
+                </div>
+
+                <div class="py-6">
+                    <Picture
+                        class="rounded-2xl shadow-xl object-cover w-full h-full"
+                        src={communityImage2}
+                        alt="A caregiver's hands gently holding the hands of an elderly person, symbolizing support and compassion."
+                        widths={[200, 400, 600]}
+                        sizes="(max-width: 1023px) 100vw, 50vw"
+                        loading="lazy"
+                        format="avif"
+                    />
+                </div>
+            </div>
         </div>
-    </div>
+    </section>
+
+
 
     <!-- Section 2: Community Presentations -->
-    <section class="py-20 px-4 sm:px-6 lg:px-8">
-        <div class="max-w-3xl mx-auto">
+    <section class="py-10 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-4xl mx-auto">
+
+
+
             <h2 class="font-serif text-3xl md:text-4xl text-[#393836] text-center mb-6">
-                For the Community
-            </h2>
-            <p class="text-center text-lg text-[#575654] leading-relaxed mb-12">
-                We provide engaging workshops and presentations for the general public to foster understanding and preparedness around important life and health decisions. Navigating decisions about health and caregiving can be overwhelming. We're here to help by providing clear, practical education for the community and the general public. All programs are designed to be supportive, interactive, and informative.
-            </p>
-
-
-            <h3 class="font-serif text-2xl md:text-3xl text-[#332e76] text-center mb-4">
                 Our Core Topics
-            </h3>
+            </h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-8">
-                <div>
-                    <h4 class="font-serif text-xl text-[#332e76] mb-3">Hospice & Palliative Care</h4>
-                    <p class="text-[#575654]">Clarifying the differences and the unique support each provides.</p>
+                <div class="flex items-start">
+                    <svg class="flex-shrink-0 h-6 w-6 text-[#332e76] mr-3 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
+                    </svg>
+                    <div>
+                        <h4 class="font-serif text-xl text-[#393836] mb-3">Hospice & Palliative Care</h4>
+                        <p class="text-[#575654]">Clarifying the differences and the unique support each provides.</p>
+                    </div>
+
                 </div>
-                <div>
-                    <h4 class="font-serif text-xl text-[#332e76] mb-3">Goals of Care</h4>
-                    <p class="text-[#575654]">Helping you think through and discuss your healthcare wishes.</p>
+                <div class="flex items-start">
+                    <svg class="flex-shrink-0 h-6 w-6 text-[#332e76] mr-3 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
+                    </svg>
+                    <div>
+                        <h4 class="font-serif text-xl text-[#393836] mb-3">Goals of Care</h4>
+                        <p class="text-[#575654]">Helping you think through and discuss your healthcare wishes.</p>
+                    </div>
                 </div>
-                <div>
-                    <h4 class="font-serif text-xl text-[#332e76] mb-3">Advance Care Planning</h4>
-                    <p class="text-[#575654]">Guiding you through the process of making your choices known and honoring your wishes.</p>
+                <div class="flex items-start">
+                    <svg class="flex-shrink-0 h-6 w-6 text-[#332e76] mr-3 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
+                    </svg>
+                    <div>
+                        <h4 class="font-serif text-xl text-[#393836] mb-3">Advance Care Planning</h4>
+                        <p class="text-[#575654]">Guiding you through the process of making your choices known and honoring your wishes.</p>
+                    </div>
+
                 </div>
-                <div>
-                    <h4 class="font-serif text-xl text-[#332e76] mb-3">Caregiving</h4>
-                    <p class="text-[#575654]">Offering practical advice and support for those caring for others.</p>
+                <div class="flex items-start">
+                    <svg class="flex-shrink-0 h-6 w-6 text-[#332e76] mr-3 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
+                    </svg>
+                    <div>
+                        <h4 class="font-serif text-xl text-[#393836] mb-3">Caregiving</h4>
+                        <p class="text-[#575654]">Offering practical advice and support for those caring for others.</p>
+                    </div>
                 </div>
-                <div>
-                    <h4 class="font-serif text-xl text-[#332e76] mb-3">Living with Serious Illness</h4>
-                    <p class="text-[#575654]">Providing resources and information for patients and families.</p>
+                <div class="flex items-start">
+                    <svg class="flex-shrink-0 h-6 w-6 text-[#332e76] mr-3 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
+                    </svg>
+                    <div>
+                        <h4 class="font-serif text-xl text-[#393836] mb-3">Living with Serious Illness</h4>
+                        <p class="text-[#575654]">Providing resources and information for patients and families.</p>
+                    </div>
                 </div>
-                <div>
-                    <h4 class="font-serif text-xl text-[#332e76] mb-3">Benefits & Entitlements</h4>
-                    <p class="text-[#575654]">Helping you navigate and access available support systems.</p>
+                <div class="flex items-start">
+                    <svg class="flex-shrink-0 h-6 w-6 text-[#332e76] mr-3 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
+                    </svg>
+                    <div>
+                        <h4 class="font-serif text-xl text-[#393836] mb-3">Benefits & Entitlements</h4>
+                        <p class="text-[#575654]">Helping you navigate and access available support systems.</p>
+                    </div>
                 </div>
             </div>
         </div>

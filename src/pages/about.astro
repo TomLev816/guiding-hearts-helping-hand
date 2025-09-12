@@ -5,6 +5,9 @@ import Layout from "@/layouts/Layout.astro";
 import Container from "@/components/container.astro";
 import Sectionhead from "@/components/sectionhead.astro";
 
+import mariaImage2 from "@/assets/maria320x400.png"
+import mariaImage from "@/assets/maria_265.jpg"
+import loriImage from "@/assets/lori320x400.png"
 ---
 
 <Layout title="About Us ">
@@ -51,45 +54,12 @@ import Sectionhead from "@/components/sectionhead.astro";
         <!-- Main Content: Team Section -->
         <main class="py-20 px-4 sm:px-6 lg:px-8">
           <div class="max-w-5xl mx-auto">
-
-            <div
-              class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-10"
-            >
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-10">
+              
               <div class="group text-center">
                 <div class="w-48 h-48 mx-auto">
                   <Picture
-                    src="https://images.unsplash.com/photo-1580489944761-15a19d654956?&fit=crop&w=280"
-                    alt="Maria Lever LCSW"
-                    sizes="(max-width: 640px) 100vw, 192px"
-                    width={192}
-                    height={192}
-                    class="w-full h-full rounded-full transition group-hover:shadow-xl object-cover object-center"
-                  />
-                </div>
-
-                <div class="mt-6">
-                  <h3 class="font-serif text-2xl text-[#393836]">
-                    Maria Lever, LCSW
-                  </h3>
-
-                   <p class="mt-4 text-base text-[#575654] leading-relaxed text-left">
-                    Maria Lever is a Licensed Clinical Social Worker (LCSW) with a deep commitment to supporting individuals and families through some of life’s most challenging moments. With over 13 years of post-master's experience, she specializes in providing compassionate guidance through serious or advanced illness, end-of-life, caregiving, bereavement, and life transitions. Maria’s practice is founded on the principles of dignity, respect, and autonomy. Maria provides direct care to individuals and families with serious, advance illness and those coping with a loss.Her work is defined by a deep respect for client autonomy, providing care that is rooted in compassion and dignity.She works closely with clients and their caregivers, offering expert counseling that honors their unique needs and wishes.
-                  </p>
-                  <p class="mt-4 text-base text-[#575654] leading-relaxed text-left">
-                    Her previous positions included clinical supervisor of Palliative Care Supportive Services at JASA,  Assistant Program Director of Waiver Services at Interim Healthcare and Chronic Care Specialist at FEGS Health and Human Services. 
-                  </p>
-                  <p class="mt-4 text-base text-[#575654] leading-relaxed text-left">
-                    A recognized leader in her field, Maria is passionate about advancing the practice of social work. She has supervised master's level clinicians and interns, organized professional conferences, and presented on vital topics for the last ten years. She also co-authored the article, “Caregiver Mental Health: The Invisible Pandemic,” for SWAAY with Lori Hardoon.  
-                  </p>
-                  <p class="mt-4 text-base text-[#575654] leading-relaxed text-left">
-                    Maria earned her Master’s in Social Work with a clinical concentration from Hunter College after receiving her bachelor's from the University at Albany. She holds a SIFI certification from Adelphi University and is a graduate of the prestigious Zelda Foster Leadership Program in Palliative and End-of-Life Care at NYU’s Silver School of Social Work.
-                  </p>
-                </div>
-              </div>
-                                <div class="group text-center">
-                <div class="w-48 h-48 mx-auto">
-                  <Picture
-                    src="https://images.unsplash.com/photo-1580489944761-15a19d654956?&fit=crop&w=280"
+                    src={loriImage}
                     alt="Lori Hardoon LCSW"
                     sizes="(max-width: 640px) 100vw, 192px"
                     width={192}
@@ -117,6 +87,41 @@ import Sectionhead from "@/components/sectionhead.astro";
                   </p>
                 </div>
               </div>
+
+
+              <div class="group text-center">
+                <div class="w-48 h-48 mx-auto">
+                  <Picture
+                    src={mariaImage}
+                    alt="Maria Lever LCSW"
+                    sizes="(max-width: 640px) 100vw, 192px"
+                    width={192}
+                    height={192}
+                    class="w-full h-full rounded-full transition group-hover:shadow-xl object-cover object-center"
+                  />
+                </div>
+
+                <div class="mt-6">
+                  <h3 class="font-serif text-2xl text-[#393836]">
+                    Maria Lever, LCSW
+                  </h3>
+
+                   <p class="mt-4 text-base text-[#575654] leading-relaxed text-left">
+                    Maria Lever is a Licensed Clinical Social Worker (LCSW) with a deep commitment to supporting individuals and families through some of life’s most challenging moments. With over 13 years of post-master's experience, she specializes in providing compassionate guidance through serious or advanced illness, end-of-life, caregiving, bereavement, and life transitions. Maria’s practice is founded on the principles of dignity, respect, and autonomy. Maria provides direct care to individuals and families with serious, advance illness and those coping with a loss.Her work is defined by a deep respect for client autonomy, providing care that is rooted in compassion and dignity.She works closely with clients and their caregivers, offering expert counseling that honors their unique needs and wishes.
+                  </p>
+                  <p class="mt-4 text-base text-[#575654] leading-relaxed text-left">
+                    Her previous positions included clinical supervisor of Palliative Care Supportive Services at JASA,  Assistant Program Director of Waiver Services at Interim Healthcare and Chronic Care Specialist at FEGS Health and Human Services. 
+                  </p>
+                  <p class="mt-4 text-base text-[#575654] leading-relaxed text-left">
+                    A recognized leader in her field, Maria is passionate about advancing the practice of social work. She has supervised master's level clinicians and interns, organized professional conferences, and presented on vital topics for the last ten years. She also co-authored the article, “Caregiver Mental Health: The Invisible Pandemic,” for SWAAY with Lori Hardoon.  
+                  </p>
+                  <p class="mt-4 text-base text-[#575654] leading-relaxed text-left">
+                    Maria earned her Master’s in Social Work with a clinical concentration from Hunter College after receiving her bachelor's from the University at Albany. She holds a SIFI certification from Adelphi University and is a graduate of the prestigious Zelda Foster Leadership Program in Palliative and End-of-Life Care at NYU’s Silver School of Social Work.
+                  </p>
+                </div>
+              </div>
+                
+
             </div>
           </div>
         </main>
