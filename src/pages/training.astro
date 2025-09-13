@@ -10,14 +10,13 @@ import { Picture } from "astro:assets";
 import Footer from "../components/Footer.astro";
 
 // Images
-import loriImage1 from "@/assets/lori-presenter.png";
+import loriPresenterImage from "@/assets/lori-presenter.png";
 import trainingImage from "@/assets/zoom-meeting.jpg";
-import communityImage1 from "@/assets/community_out.jpg";
-import communityImage2 from "@/assets/community_out_2.jpg";
+import communityImage from "@/assets/community_out_2.jpg";
 
 ---
 
-<Layout title="Specializations">
+<Layout title="Trainings">
   <Container>
 
 
@@ -62,7 +61,7 @@ import communityImage2 from "@/assets/community_out_2.jpg";
           <div class="md:w-1/2">
             <Picture
               class="rounded-xl shadow-lg w-full h-full object-cover"
-              src={loriImage1}
+              src={loriPresenterImage}
               alt="First descriptive image alt text"
               widths={[200, 400, 600]}
               sizes="(max-width: 768px) 100vw, 50vw"
@@ -97,7 +96,7 @@ import communityImage2 from "@/assets/community_out_2.jpg";
             <!-- Subsection: Training & Workshops -->
             <div class="mb-12">
                 <h3 class="font-serif text-2xl md:text-3xl text-[#393836] mb-4">Training and Workshops</h3>
-                <p class="text-[#575654] leading-relaxed mb-6">
+                <p >
                     Empower your Organization/teams with training designed just for them. We create customized workshops and presentations that align with your team's unique goals, professional roles, and expertise. Whether you need a 2-hour presentation or a comprehensive multi-year series, we can build a program that delivers results in person or virtual.
                 </p>
             </div>
@@ -105,7 +104,7 @@ import communityImage2 from "@/assets/community_out_2.jpg";
             <!-- Subsection: Consulting -->
             <div class="mb-12">
                 <h3 class="font-serif text-2xl md:text-3xl text-[#393836] mb-4">Consulting</h3>
-                <p class="text-[#575654] leading-relaxed mb-6">
+                <p >
                     We work with professionals to help them feel more confident and skilled when supporting clients and families facing serious illness, caregiving, and loss. Through case consultation and clinical supervision, we help them navigate tough conversations around goals of care and advance care planning, ensuring their clients receive the compassionate support they deserve.Our goal is to help professionals feel more prepared, comfortable and compassionate in their work.
                 </p>
             </div>
@@ -146,7 +145,7 @@ import communityImage2 from "@/assets/community_out_2.jpg";
                     <h2 class="font-serif text-3xl md:text-4xl text-[#393836] text-center mb-6">
                         For the Community
                     </h2>
-                    <p class="text-center text-lg text-[#575654] leading-relaxed mb-12">
+                    <p >
                         We provide engaging workshops and presentations for the general public to foster understanding and preparedness around important life and health decisions. Navigating decisions about health and caregiving can be overwhelming. We're here to help by providing clear, practical education for the community and the general public. All programs are designed to be supportive, interactive, and informative.
                     </p>
                 </div>
@@ -154,7 +153,7 @@ import communityImage2 from "@/assets/community_out_2.jpg";
                 <div class="py-6">
                     <Picture
                         class="rounded-2xl shadow-xl object-cover w-full h-full"
-                        src={communityImage2}
+                        src={communityImage}
                         alt="A caregiver's hands gently holding the hands of an elderly person, symbolizing support and compassion."
                         widths={[200, 400, 600]}
                         sizes="(max-width: 1023px) 100vw, 50vw"
@@ -184,7 +183,7 @@ import communityImage2 from "@/assets/community_out_2.jpg";
                     </svg>
                     <div>
                         <h4 class="font-serif text-xl text-[#393836] mb-3">Hospice & Palliative Care</h4>
-                        <p class="text-[#575654]">Clarifying the differences and the unique support each provides.</p>
+                        <p >Clarifying the differences and the unique support each provides.</p>
                     </div>
 
                 </div>
@@ -194,7 +193,7 @@ import communityImage2 from "@/assets/community_out_2.jpg";
                     </svg>
                     <div>
                         <h4 class="font-serif text-xl text-[#393836] mb-3">Goals of Care</h4>
-                        <p class="text-[#575654]">Helping you think through and discuss your healthcare wishes.</p>
+                        <p >Helping you think through and discuss your healthcare wishes.</p>
                     </div>
                 </div>
                 <div class="flex items-start">
@@ -203,7 +202,7 @@ import communityImage2 from "@/assets/community_out_2.jpg";
                     </svg>
                     <div>
                         <h4 class="font-serif text-xl text-[#393836] mb-3">Advance Care Planning</h4>
-                        <p class="text-[#575654]">Guiding you through the process of making your choices known and honoring your wishes.</p>
+                        <p >Guiding you through the process of making your choices known and honoring your wishes.</p>
                     </div>
 
                 </div>
@@ -213,7 +212,7 @@ import communityImage2 from "@/assets/community_out_2.jpg";
                     </svg>
                     <div>
                         <h4 class="font-serif text-xl text-[#393836] mb-3">Caregiving</h4>
-                        <p class="text-[#575654]">Offering practical advice and support for those caring for others.</p>
+                        <p >Offering practical advice and support for those caring for others.</p>
                     </div>
                 </div>
                 <div class="flex items-start">
@@ -222,7 +221,7 @@ import communityImage2 from "@/assets/community_out_2.jpg";
                     </svg>
                     <div>
                         <h4 class="font-serif text-xl text-[#393836] mb-3">Living with Serious Illness</h4>
-                        <p class="text-[#575654]">Providing resources and information for patients and families.</p>
+                        <p >Providing resources and information for patients and families.</p>
                     </div>
                 </div>
                 <div class="flex items-start">
@@ -231,7 +230,7 @@ import communityImage2 from "@/assets/community_out_2.jpg";
                     </svg>
                     <div>
                         <h4 class="font-serif text-xl text-[#393836] mb-3">Benefits & Entitlements</h4>
-                        <p class="text-[#575654]">Helping you navigate and access available support systems.</p>
+                        <p >Helping you navigate and access available support systems.</p>
                     </div>
                 </div>
             </div>
