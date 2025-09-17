@@ -3,6 +3,32 @@ import Layout from "@/layouts/Layout.astro";
 import Container from "@/components/container.astro";
 import Footer from "../components/Footer.astro";
 import Cta from "@/components/cta.astro";
+
+const acceptedInsurances = [
+  'Aetna',
+  'Anthem Blue Cross and Blue Shield (Formerly Empire)',
+  'Anthem EAP',
+  'Blue Cross Blue Shield of Massachusetts',
+  'Carelon Behavioral Health',
+  'Cigna',
+  'Horizon Blue Cross and Blue Shield of New Jersey',
+  'Medicare (Original)',
+  'Medicare Advantage Plans',
+  'Oscar (Optum)',
+  'Oxford (Optum)',
+  'Quest Behavioral Health',
+  'United Healthcare (Optum)',
+  'United Healthcare Medicare Advantage',
+]
+
+const comingSoonInsurers = [
+  'Optum Medicaid', 
+  'Highmark BlueCross BlueShield of Western New York', 
+  'Humana Medicare Advantage', 
+  'Horizon Blue Cross Blue Shield of NJ Medicare Advantage', 
+  'Highmark Blue Shield of Northeastern New York', 
+  'Highmark BlueCross BlueShield of Western New York'  
+]
 ---
 
 <Layout title="Counseling">
@@ -43,7 +69,7 @@ import Cta from "@/components/cta.astro";
               Counseling
             </h1>
             <p
-              class="mt-6 max-w-3xl mx-auto text-lg text-[#575654] leading-relaxed"
+              class="mt-6 max-w-6xl mx-auto text-lg text-[#575654] leading-relaxed"
             >
               
               At Guiding Hearts Helping Hands, we understand that confronting serious illness, supporting a loved one through their health journey, experiencing loss, or navigating end-of-life decisions can be profoundly difficult and isolating. Our practice is dedicated to providing compassionate, specialized therapeutic support for individuals and families facing these unique and often overwhelming challenges. 
@@ -66,24 +92,14 @@ import Cta from "@/components/cta.astro";
               </p>
               
               <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 text-[#575654]">
-                <div class="bg-gray-50 p-4 rounded-lg">Aetna</div>
-                <div class="bg-gray-50 p-4 rounded-lg">Anthem Blue Cross and Blue Shield (Formerly Empire)</div>
-                <div class="bg-gray-50 p-4 rounded-lg">Anthem EAP</div>
-                <div class="bg-gray-50 p-4 rounded-lg">Blue Cross Blue Shield of Massachusetts</div>
-                <div class="bg-gray-50 p-4 rounded-lg">Carelon Behavioral Health</div>
-                <div class="bg-gray-50 p-4 rounded-lg">Cigna</div>
-                <div class="bg-gray-50 p-4 rounded-lg">Horizon Blue Cross and Blue Shield of New Jersey</div>
-                <div class="bg-gray-50 p-4 rounded-lg">Medicare (Original)</div>
-                <div class="bg-gray-50 p-4 rounded-lg">Medicare Advantage Plans</div>
-                <div class="bg-gray-50 p-4 rounded-lg">Oscar (Optum)</div>
-                <div class="bg-gray-50 p-4 rounded-lg">Oxford (Optum)</div>
-                <div class="bg-gray-50 p-4 rounded-lg">Quest Behavioral Health</div>
-                <div class="bg-gray-50 p-4 rounded-lg">United Healthcare (Optum)</div>
-                <div class="bg-gray-50 p-4 rounded-lg">United Healthcare Medicare Advantage</div>
+                {acceptedInsurances.map((insurance) => (
+                  <div class="bg-gray-50 p-4 rounded-lg">{insurance}</div>
+                ))}
+
               </div>
 
               <p class="mt-6 text-[#575654]">
-                <strong class="highlight">Coming soon:</strong> Optum Medicaid, Highmark BlueCross BlueShield of Western New York, Humana Medicare Advantage, Horizon Blue Cross Blue Shield of NJ Medicare Advantage, Highmark Blue Shield of Northeastern New York, Highmark BlueCross BlueShield of Western New York
+                <strong class="highlight">Coming soon:</strong> {comingSoonInsurers.join(", ")}
               </p>
               <p class="highlight mt-4 text-center text-xl text-bold"> 
                 If you have any questions about insurance coverage, please
@@ -102,11 +118,11 @@ import Cta from "@/components/cta.astro";
               </p>
             </article>
 
-        <Cta 
+          <Cta 
             page="Counseling" 
             microcopy="Your first 15 minute consultation is free."
             buttoncopy="Schedule a Free Consultation"
-            />
+          />
 
           </div>
         </main>
