@@ -8,6 +8,8 @@ import Sectionhead from "@/components/sectionhead.astro";
 import { Picture } from "astro:assets";
 
 import Footer from "../components/Footer.astro";
+import Cta from "@/components/cta.astro";
+
 import docImage from "@/assets/doc-signing.jpg"
 ---
 
@@ -126,17 +128,16 @@ import docImage from "@/assets/doc-signing.jpg"
                 </div>
             </div>
 
-            <!-- Final CTA -->
-            <div class="text-center mt-20">
-                <p class="font-serif text-2xl text-[#393836]">
-                    For more information and pricing details, please contact us.
-                </p>
-                <a href="/contact" class="mt-6 inline-block bg-[#004ba8] text-white font-bold text-lg px-8 py-4 rounded-lg hover:bg-[#0062db] transition-colors duration-300 shadow-md">
-                    Request a Consultation
-                </a>
-            </div>
+
         </div>
     </section>
+    <div class="max-w-6xl mx-auto text-center">
+        <Cta 
+            page="Medicaid Assistance" 
+            microcopy="For more information and pricing details, please contact us."
+            buttoncopy="Request a Consultation"
+            />
+    </div>
 
 </body>
 </html>

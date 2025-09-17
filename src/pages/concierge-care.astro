@@ -6,6 +6,8 @@ import Sectionhead from "@/components/sectionhead.astro";
 import { Picture } from "astro:assets";
 
 import Footer from "../components/Footer.astro";
+import Cta from "@/components/cta.astro";
+
 import handsImage from "@/assets/hands-img.png";
 
 // A full page dedicated to Concierge Care Management Services.
@@ -177,6 +179,13 @@ import handsImage from "@/assets/hands-img.png";
             </div>
         </div>
     </section>
+    <div class="max-w-6xl mx-auto text-center">
+        <Cta 
+            page="Concierge Care Management" 
+            microcopy="For more information and pricing details, please contact us."
+            buttoncopy="Request a Consultation"
+            />
+    </div>
 </body>
 </html>
 </Container>

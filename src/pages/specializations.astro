@@ -9,6 +9,7 @@ import { Picture } from "astro:assets";
 
 // Import the reusable footer component we created earlier.
 import Footer from "../components/Footer.astro";
+import Cta from "@/components/cta.astro";
 import seasImage from "@/assets/seas.jpg";
 
 ---
@@ -54,7 +55,7 @@ import seasImage from "@/assets/seas.jpg";
         <div class="max-w-3xl mx-auto space-y-16">
 
             <!-- Specialization 1: Palliative Care -->
-            <article>
+            <article id='palliative-care'>
                 <h2 class="font-serif text-3xl md:text-4xl text-[#393836] mb-4">Palliative Care & Advanced Illness</h2>
                 <p>
                     Living with a serious or chronic condition can be overwhelming—for both patients and those who love and care for them. We bring deep expertise in supporting individuals and families navigating cancer, heart failure, COPD, neurological illnesses, and other complex diagnoses.
@@ -88,7 +89,7 @@ import seasImage from "@/assets/seas.jpg";
 
 
             <!-- Specialization 2: End-of-Life -->
-            <article>
+            <article id='end-of-life-Care'>
                 <h2 class="font-serif text-3xl md:text-4xl text-[#393836] mb-4">End-of-Life Care</h2>
                 <p>
                     Navigating the end of life—your own or that of someone you love—is among the most vulnerable experiences we encounter. Approaching the end of life, whether for oneself or a loved one, brings a unique set of emotional, spiritual, and practical considerations. We walk alongside individuals and families during this sacred time with compassion, honesty, and a steady presence.
@@ -121,7 +122,7 @@ import seasImage from "@/assets/seas.jpg";
         <div class="max-w-3xl mx-auto space-y-16">
 
             <!-- Specialization 3: Caregiver Support -->
-            <article>
+            <article id='caregiver-support'>
                 <h2 class="font-serif text-3xl md:text-4xl text-[#393836] mb-4">
                     Caregiver Support
                 </h2>
@@ -137,7 +138,7 @@ import seasImage from "@/assets/seas.jpg";
             </article>
 
             <!-- Specialization 4: Aging & Life Transitions -->
-            <article>
+            <article id='aging-life-transitions'>
                 <h2 class="font-serif text-3xl md:text-4xl text-[#393836] mb-4">
                     Aging & Life Transitions
                 </h2>
@@ -150,7 +151,7 @@ import seasImage from "@/assets/seas.jpg";
             </article>
 
             <!-- Specialization 5: Grief & Bereavement -->
-            <article>
+            <article id='grief-bereavement'>
                 <h2 class="font-serif text-3xl md:text-4xl text-[#393836] mb-4">Grief & Bereavement</h2>
                 <p>
                     Losing a loved one is one of life's most painful experiences. Grief is not something to "get over"—it is something to be carried, honored, and gently tended to. Whether your loss is recent or long ago, expected or sudden, we offer compassionate, non-judgmental support to help you navigate the complex emotions of grief. We are here to support you through the pain, confusion, and tenderness that can arise. Together we can find pathways towards healing and integration of loss into life.
@@ -164,7 +165,15 @@ import seasImage from "@/assets/seas.jpg";
             </article>
 
         </div>
+
     </section>
+      <div class="max-w-6xl mx-auto text-center">
+        <Cta 
+            page="Specializations" 
+            microcopy="Your first 15 minute consultation is free."
+            buttoncopy="Schedule a Free Consultation"
+            />
+    </div>
 </body>
 </html>
   </Container>
